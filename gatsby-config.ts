@@ -9,14 +9,31 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-mdx", {
+  plugins: [ 
+  `gatsby-plugin-image`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "pages",
-      "path": "./src/pages/"
+      name: `markdown`,
+      path: `${__dirname}/src/markdown/`,
     },
-    __key: "pages"
-  }]
+    __key: "markdown"
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: `static`,
+      path: `${__dirname}/static/`,
+    },
+    __key: "markdown"
+  },
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {},
+  },
+  ]
 };
 
 export default config;

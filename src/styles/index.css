@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #181A33;
+    color: white;
+    font-family: "Roboto";
+}
+
+.main-app{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #252a71;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c6c8e6;
+    border-radius: 10px;
+}  

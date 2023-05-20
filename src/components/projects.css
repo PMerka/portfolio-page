@@ -1,0 +1,9 @@
+.projects{
+    perspective: 1000px
+}
+
+.img{
+    transform: rotateX(110deg);
+    width: 400px;
+    height: 400px;
+}
