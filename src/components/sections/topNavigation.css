@@ -1,0 +1,37 @@
+.top-navigation{
+    height: 5rem;
+    /*border: solid;*/
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+    background-color: #181A33;
+    box-shadow: 0 0 10px 15px rgba(24, 26, 51, 1);
+   
+}
+
+.top-navigation ul{
+    margin-top: 2rem;
+    vertical-align: middle;
+    list-style-type: none;
+    padding: 0;
+    float: left;
+    float: right;
+    
+}
+
+li{
+    display: inline-block;
+    margin-right: 1.5rem;
+    padding: 2px 6px;
+    opacity: 0.8; 
+    cursor: pointer;
+    
+    border-radius: 6px;
+}
+
+li:hover{
+    background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+    opacity: 1;
+    padding: 2px 6px;
+}

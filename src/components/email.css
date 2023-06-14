@@ -1,0 +1,26 @@
+.email-line{
+    margin-top: 60px;
+    display: flex;
+    gap: 1rem;
+    font-size: 50%;
+    align-items: center;
+    
+}
+
+.email-icon{
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    /*border: solid 2px;*/
+    opacity: 0.8;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+    
+}
+
+
+.email-icon:hover{
+    opacity: 1;
+    cursor: pointer;
+    
+}
