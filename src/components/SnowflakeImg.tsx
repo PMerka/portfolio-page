@@ -1,6 +1,5 @@
-import React, {useRef, useEffect, useState} from 'react'
+import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import useIntersectionObserver from './useIntersectionObserver'
 
 function SnowflakeImg({isZoomed}: {isZoomed: boolean}) {
 

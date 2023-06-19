@@ -3,13 +3,15 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #151a32;
+    background-color: #181A33;
     color: white;
     font-family: "Roboto";
 }
 
 .main-app{
+    margin: 0;
     max-width: 1600px;
+    min-width: 320px;
     margin: auto;
 }
 
@@ -32,4 +34,35 @@ html, body{
 a{
     color: inherit;
     text-decoration: none
+}
+
+body{
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 2em; 
+}
+
+h2{
+    padding-left: 7.5%;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+.zero-top-margin{
+    margin-top: 0;
+}
+
+@media (min-width: 740px){
+    body{
+        font-size: 1.5rem;
+    }
+}
+
+button{
+    background-color: inherit;
+    color: inherit;
+    font: inherit;
+    border: none;
 }

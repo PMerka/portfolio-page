@@ -1,9 +1,10 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import 'src/styles/index.css'
+import TopNavigation from "src/components/sections/TopNavigation"
 import TopSection from "../components/sections/TopSection"
 import Projects from "src/components/sections/Projects"
-import TopNavigation from "src/components/sections/TopNavigation"
+import Skills from "src/components/sections/Skills"
 import { useRef, useEffect } from "react"
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -15,9 +16,15 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
    <div className="main-app">
+
     <TopNavigation scrollToElement={scrollToElement} />
-    <TopSection />
-    <Projects refProp={elementRef}/>
+    
+    <main>
+      <TopSection />
+      <Skills/>
+      <Projects refProp={elementRef}/>
+    </main>
+
    </div>
   )
 }

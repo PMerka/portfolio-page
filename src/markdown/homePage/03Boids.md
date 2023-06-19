@@ -5,4 +5,4 @@ keywords: Complex system, Simulation of biological system
 img: ../../static/boids.png
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas aliquet accumsan leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque arcu. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Maecenas aliquet accumsan leo. Phasellus rhoncus. 
+This app implements the simulation of colective behaviour known as boids. The program simulates movement typical for flocks of birds. The colmplex behaviour of boids is result of simple rules: separation, atraction and alignment of velocity vectors. Program logic and vector math is implemanted with plain JS, the UI is created in react. 

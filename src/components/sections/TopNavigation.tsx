@@ -10,12 +10,27 @@ export default function TopNavigation({scrollToElement}: {scrollToElement: Funct
   }
   
   return (
-    <nav className='top-navigation'>
-      <ul>
-        <li onClick={() => scrollTop()}>Home</li>
-        <li onClick={() => scrollToElement()}>My projects</li>
-        <li>Skills</li>
-      </ul>
-    </nav>
+    <header className='header'>
+      <nav className='top-navigation'>
+
+        <ul>
+          <li onClick={() => scrollTop()}>
+            <button>
+              Home
+            </button>
+          </li>
+          <li onClick={() => scrollToElement()}>
+            <button>
+              My projects
+            </button>
+          </li>
+          <li>
+            <button>
+              Skills
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
   )
 }
