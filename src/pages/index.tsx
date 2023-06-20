@@ -5,17 +5,10 @@ import TopNavigation from "src/components/sections/TopNavigation"
 import TopSection from "../components/sections/TopSection"
 import Projects from "src/components/sections/Projects"
 import Skills from "src/components/sections/Skills"
-import { useRef, useEffect } from "react"
+import Footer from "src/components/sections/Footer"
 import useScrollToRef from "./useScrollToRef"
 
 const IndexPage: React.FC<PageProps> = () => {
-  /*
-  const elementRef = useRef<HTMLElement>(null)
-
-  const scrollToElement = () => {
-    elementRef.current?.scrollIntoView({ behavior: "smooth"})
-  }
-  */
   const [projectsRef, scrollToProjects] = useScrollToRef()
   const [skillsRef, scrollToSkills] = useScrollToRef()
 
@@ -30,6 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Projects refProp={projectsRef}/>
     </main>
 
+    <Footer/>
    </div>
   )
 }

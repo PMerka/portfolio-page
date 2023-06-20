@@ -10,9 +10,19 @@ html, body{
 
 .main-app{
     margin: 0;
+
+}
+
+main{
     max-width: 1600px;
     min-width: 320px;
     margin: auto;
+}
+
+nav{
+    max-width: 1600px;
+    min-width: 320px;
+    margin: auto; 
 }
 
 /* Scrollbar */
