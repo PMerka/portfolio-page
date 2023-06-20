@@ -45,9 +45,7 @@ h1{
 }
 
 h2{
-    padding-left: 7.5%;
-    margin: auto;
-    padding-bottom: 1em;
+    font-size: 1.5em; 
 }
 
 .zero-top-margin{

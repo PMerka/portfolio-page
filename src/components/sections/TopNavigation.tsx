@@ -1,7 +1,7 @@
 import React from 'react'
 import './topNavigation.css'
 
-export default function TopNavigation({scrollToElement}: {scrollToElement: Function}) {
+export default function TopNavigation({scrollToProjects, scrollToSkills}: {scrollToProjects: Function, scrollToSkills: Function}) {
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
@@ -14,18 +14,18 @@ export default function TopNavigation({scrollToElement}: {scrollToElement: Funct
       <nav className='top-navigation'>
 
         <ul>
-          <li onClick={() => scrollTop()}>
-            <button>
+          <li>
+            <button onClick={() => scrollTop()}>
               Home
             </button>
           </li>
-          <li onClick={() => scrollToElement()}>
+          <li onClick={() => scrollToProjects()}>
             <button>
               My projects
             </button>
           </li>
           <li>
-            <button>
+            <button onClick={() => scrollToSkills()}>
               Skills
             </button>
           </li>

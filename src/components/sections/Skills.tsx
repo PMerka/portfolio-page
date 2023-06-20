@@ -1,9 +1,9 @@
 import React from "react";
 import "./skills.css";
 
-export default function Skills() {
+export default function Skills({refProp}: {refProp?: React.RefObject<HTMLElement>}) {
   return (
-    <section>
+    <section ref={refProp} className="skills-section">
       <h2>Few words about me</h2>
       <div className="skills">
         <div className="about-me">

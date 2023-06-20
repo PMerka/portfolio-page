@@ -7,11 +7,7 @@ import SnowflakeImg from "../SnowflakeImg";
 import useIntersectionObserver from "../useIntersectionObserver";
 import useProjectsData from "../useProjectData";
 
-export default function Projects({
-  refProp,
-}: {
-  refProp?: React.RefObject<HTMLDivElement>;
-}) {
+export default function Projects({refProp}: {refProp?: React.RefObject<HTMLElement>}) {
   const data = useProjectsData();
   const nodes = data.allMarkdownRemark.nodes;
 
@@ -29,9 +25,8 @@ export default function Projects({
 
   return (
     <section ref={refProp} className="projects">
-      <h2>Creative Projects</h2>
-
       <div className="projects-intro">
+        <h2>Creative Projects</h2>
         <p className="zero-top-margin">
           I like to practice my JavaScript skills on projects combining computer
           graphics, art, math, and science - for example creating interactive

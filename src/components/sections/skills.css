@@ -1,8 +1,13 @@
+.skills-section{
+    width: 85%;
+    margin: auto;
+    scroll-margin-top: 6rem;
+}
+
 .skills{
     display: flex;
     gap: 10%;
     flex-wrap: wrap;
-    width: 85%; 
     margin: auto; 
     opacity: 0.9;
 }

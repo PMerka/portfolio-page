@@ -15,8 +15,8 @@ interface projectItemProps {
   pageURL: string;
   repoUrl: string;
   children: string | JSX.Element | JSX.Element[];
-  descriptionClassNames?: string
-  innerShadow?: boolean
+  descriptionClassNames?: string;
+  innerShadow?: boolean;
 }
 
 export default function ProjectItem({
@@ -26,25 +26,34 @@ export default function ProjectItem({
   repoUrl,
   children,
   descriptionClassNames,
-  innerShadow = false
+  innerShadow = false,
 }: projectItemProps) {
-  {
-    /*
-  const pageData = allData.find(node => node.frontmatter.title === title)*/
-  }
+
   const keywords = projectData.frontmatter.keywords;
   const title = projectData.frontmatter.title;
   const htmlContent = projectData.html;
 
   return (
-    <div ref={myRef} className={`project-item ${innerShadow ? "project-item-inner-shadow" : null}`}>
-      
+    <div
+      ref={myRef}
+      className={`project-item ${
+        innerShadow ? "project-item-inner-shadow" : null
+      }`}
+    >
       <div className={`project-description ${descriptionClassNames}`}>
         <h3>{title}</h3>
         <div style={{ marginTop: 10, marginBottom: 10 }}>
-          <b style={{ paddingRight: "1rem" }}>Topics:</b> {keywords}
+          {/*
+          <b style={{ paddingRight: "1rem" }}>Topics:</b> 
+          <p>
+            {keywords}
+          </p>
+          */}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: htmlContent }} className="short-text"></div>
+        <div
+          dangerouslySetInnerHTML={{ __html: htmlContent }}
+          className="short-text"
+        ></div>
 
         <div className="projet-links-container">
           <a className="project-link-button" href={pageURL} target="_blank">
