@@ -6,7 +6,8 @@
 
 .skills{
     display: flex;
-    gap: 10%;
+    row-gap: 3em;
+    column-gap: 10%;
     flex-wrap: wrap;
     margin: auto; 
     opacity: 0.9;

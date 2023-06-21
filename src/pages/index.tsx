@@ -14,7 +14,6 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
    <div className="main-app">
-
     <TopNavigation scrollToProjects={scrollToProjects} scrollToSkills={scrollToSkills} />
     
     <main>
@@ -30,4 +29,10 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Title</title>
+export const Head: HeadFC = () => (
+  <>
+    <title>Pavel Měrka | WebDev</title>
+    <link rel="icon" href="/logo.png"></link>
+  </>
+  
+)
