@@ -9,4 +9,5 @@ const useScrollToRef = () => {
     
     return [elementRef, scrollToElement] as const
 }
+
 export default useScrollToRef

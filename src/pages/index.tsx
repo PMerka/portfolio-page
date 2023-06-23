@@ -6,7 +6,7 @@ import TopSection from "../components/sections/TopSection"
 import Projects from "src/components/sections/Projects"
 import Skills from "src/components/sections/Skills"
 import Footer from "src/components/sections/Footer"
-import useScrollToRef from "./useScrollToRef"
+import useScrollToRef from "src/hooks/useScrollToRef"
 
 const IndexPage: React.FC<PageProps> = () => {
   const [projectsRef, scrollToProjects] = useScrollToRef()
