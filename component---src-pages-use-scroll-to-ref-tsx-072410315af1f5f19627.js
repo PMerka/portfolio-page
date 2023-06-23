@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_portfolio=self.webpackChunkmy_portfolio||[]).push([[707],{7486:function(e,u,f){f.r(u);var l=f(7294);u.default=()=>[(0,l.useRef)(null),()=>{}]}}]);
+//# sourceMappingURL=component---src-pages-use-scroll-to-ref-tsx-072410315af1f5f19627.js.map
