@@ -6,6 +6,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import SnowflakeImg from "../SnowflakeImg";
 import useIntersectionObserver from "../useIntersectionObserver";
 import useProjectsData from "../useProjectData";
+import SnowflakeVideo from "@static/snowflake_growth_opt.mp4"
+import BoidVideo from "@static/boids.mp4"
 
 export default function Projects({refProp}: {refProp?: React.RefObject<HTMLElement>}) {
   const data = useProjectsData();
@@ -55,7 +57,7 @@ export default function Projects({refProp}: {refProp?: React.RefObject<HTMLEleme
       >
         <div className="video-box snowflake-video">
           <video
-            src="/snowflake_growth_opt.mp4"
+            src={SnowflakeVideo}
             style={{ width: "100%" }}
             className="rotateY"
             ref={video}
@@ -72,7 +74,7 @@ export default function Projects({refProp}: {refProp?: React.RefObject<HTMLEleme
       >
         <div className="video-box boid-video">
           <video
-            src="/boids.mp4"
+            src={BoidVideo}
             style={{ width: "100%" }}
             autoPlay={true}
             muted={true}

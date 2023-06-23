@@ -24,14 +24,17 @@ export default function TopSection({
             <Contact />
         </div>
 
-        <StaticImage
-          objectFit={"scale-down"}
-          placeholder={"none"}
-          loading="eager"
-          className="top-section__img"
-          src="./../../../static/fractal_snowflake.png"
-          alt="fractal snowflake"
-        />
+        <div className="top-section__img">
+          <StaticImage
+            style={{width: '100%'}}
+            objectFit={"scale-down"}
+            placeholder={"none"}
+            loading="eager"
+            src="./../../../static/fractal_snowflake.png"
+            alt="fractal snowflake"
+          />
+        </div>
+
     </section>
   );
 }
