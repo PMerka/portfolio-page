@@ -37,7 +37,7 @@ export default function ProjectItem({
     <div
       ref={myRef}
       className={`project-item ${
-        innerShadow ? "project-item-inner-shadow" : null
+        innerShadow ? "project-item-inner-shadow" : ""
       }`}
     >
       <div className={`project-description ${descriptionClassNames}`}>

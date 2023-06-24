@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ProjectItem from "../ProjectItem";
-import { graphql, useStaticQuery } from "gatsby";
 import "./projects.css";
-import { StaticImage } from "gatsby-plugin-image";
 import SnowflakeImg from "../SnowflakeImg";
 import useIntersectionObserver from "../useIntersectionObserver";
 import useProjectsData from "../useProjectData";
@@ -47,7 +45,7 @@ export default function Projects({refProp}: {refProp?: React.RefObject<HTMLEleme
         descriptionClassNames="project-description-big-margin-top"
         innerShadow={true}
       >
-        <SnowflakeImg isZoomed={isVisible} />
+        <SnowflakeImg/>
       </ProjectItem>
 
       <ProjectItem

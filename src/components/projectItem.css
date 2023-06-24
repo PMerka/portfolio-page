@@ -26,7 +26,7 @@
 }
 
 .project-img{
-    height:  60vmin;
+    height:  min(60vmin, 60%);
     min-width: 280px;
     min-height: 280px;
     aspect-ratio: 1;

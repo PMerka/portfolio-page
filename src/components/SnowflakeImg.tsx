@@ -1,11 +1,16 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
+import useIntersectionObserver from './useIntersectionObserver';
 
-function SnowflakeImg({isZoomed}: {isZoomed: boolean}) {
+function SnowflakeImg() {
+
+  const imageRef = useRef<HTMLDivElement | null>(null);
+  const entry = useIntersectionObserver(imageRef, {});
+  const isZoomed = !!entry?.isIntersecting;
 
 
   return (
-    <div className={`project-img ${isZoomed ? "zoom-in-img" : "zoom-out-img"} `}>
+    <div ref={imageRef} className={`project-img ${isZoomed ? "zoom-in-img" : undefined} `}>
         <StaticImage
         style={{width: '100%'}}
         objectFit={"scale-down"}

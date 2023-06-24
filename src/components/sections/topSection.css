@@ -2,7 +2,7 @@
     margin: auto;
     overflow: hidden;
     width: 100%;
-    min-height: min(100vh, 200vw);
+    min-height: min(100vh, 200vw, 1000px);
     position: relative;
     z-index: 0;
 }
