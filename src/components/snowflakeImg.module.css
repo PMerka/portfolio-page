@@ -1,0 +1,16 @@
+.projectImg{
+    height:  min(60vmin, 60%);
+    min-width: 280px;
+    min-height: 280px;
+    aspect-ratio: 1;
+    position: absolute;
+    opacity: 0.9;
+    right: 10%;
+    bottom: 0%;
+    z-index: 0;
+}
+
+.zoomInImg{
+    transition: transform 20s ease;
+    transform: scale(3);
+}

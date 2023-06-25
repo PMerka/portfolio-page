@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import * as styles from './snowflakeImg.module.css'
 
 function SnowflakeImg() {
 
@@ -10,7 +11,7 @@ function SnowflakeImg() {
 
 
   return (
-    <div ref={imageRef} className={`project-img ${isZoomed ? "zoom-in-img" : undefined} `}>
+    <div ref={imageRef} className={`${styles.projectImg} ${isZoomed ? styles.zoomInImg : ''}`}>
         <StaticImage
         style={{width: '100%'}}
         objectFit={"scale-down"}

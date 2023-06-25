@@ -1,5 +1,5 @@
 import React from 'react'
-import './topNavigation.css'
+import * as styles from './topNavigation.module.css'
 
 export default function TopNavigation({scrollToProjects, scrollToSkills}: {scrollToProjects: Function, scrollToSkills: Function}) {
   const scrollTop = () => {
@@ -10,8 +10,8 @@ export default function TopNavigation({scrollToProjects, scrollToSkills}: {scrol
   }
   
   return (
-    <header className='header'>
-      <nav className='top-navigation'>
+    <header className={styles.header}>
+      <nav className={styles.topNavigation}>
 
         <ul>
           <li>

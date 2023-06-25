@@ -7,15 +7,14 @@
     height: auto;
 }
 
-.top-navigation{
-    /*border: solid;*/
+.topNavigation{
     display: flex;
     justify-content: flex-end;
     background-color: #181A33;
     align-items: center;
 }
 
-.top-navigation ul{
+.topNavigation ul{
     display: flex;
     vertical-align: middle;
     list-style-type: none;
@@ -24,11 +23,11 @@
     margin: 0.75em 0.5em 0.25em 0.5em;
 }
 
-.top-navigation li{
+.topNavigation li{
     margin-right: 1.25em;
 }
 
-.top-navigation button{
+.topNavigation button{
     padding: 3px 6px;
     opacity: 0.8; 
     cursor: pointer;
@@ -36,7 +35,7 @@
     border-radius: 6px;
 }
 
-.top-navigation button:hover{
+.topNavigation button:hover{
     background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
     opacity: 1;
 }

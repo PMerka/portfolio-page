@@ -1,7 +1,5 @@
-import { spawn } from "child_process";
 import React from "react";
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
-import "./projectItem.css";
+import * as styles from './projectItem.module.css'
 
 interface projectItemProps {
   myRef?: any;
@@ -28,38 +26,25 @@ export default function ProjectItem({
   descriptionClassNames,
   innerShadow = false,
 }: projectItemProps) {
-
-  const keywords = projectData.frontmatter.keywords;
   const title = projectData.frontmatter.title;
   const htmlContent = projectData.html;
 
   return (
     <div
       ref={myRef}
-      className={`project-item ${
-        innerShadow ? "project-item-inner-shadow" : ""
-      }`}
+      className={`${styles.main} ${innerShadow ? styles.maininShadow : ''}`}
     >
-      <div className={`project-description ${descriptionClassNames}`}>
+      <div className={`${styles.description} ${descriptionClassNames}`}>
         <h3>{title}</h3>
-        <div style={{ marginTop: 10, marginBottom: 10 }}>
-          {/*
-          <b style={{ paddingRight: "1rem" }}>Topics:</b> 
-          <p>
-            {keywords}
-          </p>
-          */}
-        </div>
         <div
           dangerouslySetInnerHTML={{ __html: htmlContent }}
-          className="short-text"
         ></div>
 
-        <div className="projet-links-container">
-          <a className="project-link-button" href={pageURL} target="_blank">
+        <div className={styles.linksContainer}>
+          <a className={styles.linkButton} href={pageURL} target="_blank">
             Try the app
           </a>
-          <a className="project-link-button" href={repoUrl} target="_blank">
+          <a className={styles.linkButton} href={repoUrl} target="_blank">
             Source code
           </a>
         </div>
