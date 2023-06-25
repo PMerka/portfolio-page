@@ -6,7 +6,7 @@ footer{
 }
 
 .footer-body{
-    max-width: 85%;
+    max-width: min(85%, 1600px);
     margin: 2em auto 3em;
     font-size: 0.75rem;
     display: flex;
