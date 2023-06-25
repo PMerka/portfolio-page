@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import ProjectItem from "../ProjectItem";
 import "./projects.css";
 import SnowflakeImg from "../SnowflakeImg";
-import useIntersectionObserver from "../useIntersectionObserver";
-import useProjectsData from "../useProjectData";
+import useIntersectionObserver from "src/hooks/useIntersectionObserver";
+import useProjectsData from "src/hooks/useProjectData";
 import SnowflakeVideo from "@static/snowflake_growth_opt.mp4"
 import BoidVideo from "@static/boids.mp4"
 

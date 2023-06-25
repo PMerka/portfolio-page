@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import useIntersectionObserver from './useIntersectionObserver';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 function SnowflakeImg() {
 
