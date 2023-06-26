@@ -23,7 +23,11 @@ export default function Email() {
           {copyText}
         </button>
 
-        <a className={styles.button} href="https://github.com/PMerka" target="_blank">
+        <a
+          className={styles.button}
+          href="https://github.com/PMerka"
+          target="_blank"
+        >
           Github profile
         </a>
       </div>

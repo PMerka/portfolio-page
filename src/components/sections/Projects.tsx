@@ -1,12 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import ProjectItem from "../ProjectItem";
-import * as styles from './projects.module.css'
+import * as styles from "./projects.module.css";
 import SnowflakeImg from "../SnowflakeImg";
 import useProjectsData from "src/hooks/useProjectData";
-import SnowflakeVideo from "@static/snowflake_growth_opt.mp4"
-import BoidVideo from "@static/boids.mp4"
+import SnowflakeVideo from "@static/snowflake_growth_opt.mp4";
+import BoidVideo from "@static/boids.mp4";
 
-export default function Projects({refProp}: {refProp?: React.RefObject<HTMLElement>}) {
+export default function Projects({
+  refProp,
+}: {
+  refProp?: React.RefObject<HTMLElement>;
+}) {
   const data = useProjectsData();
   const nodes = data.allMarkdownRemark.nodes;
 
@@ -36,10 +40,10 @@ export default function Projects({refProp}: {refProp?: React.RefObject<HTMLEleme
         projectData={nodes[0]}
         pageURL={"https://pmerka.github.io/snowflake/"}
         repoUrl={"https://github.com/PMerka/snowflake"}
-        marginTop={'8%'}
+        marginTop={"8%"}
         innerShadow={true}
       >
-        <SnowflakeImg/>
+        <SnowflakeImg />
       </ProjectItem>
 
       <ProjectItem

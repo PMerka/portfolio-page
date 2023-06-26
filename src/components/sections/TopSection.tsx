@@ -1,5 +1,4 @@
 import React from "react";
-import "./topSection.css";
 import { StaticImage } from "gatsby-plugin-image";
 import Contact from "../Contact";
 import * as styles from "./topSection.module.css";

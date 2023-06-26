@@ -1,5 +1,4 @@
 import React from "react";
-import "./skills.css";
 import * as styles from "./skills.module.css";
 
 export default function Skills({
