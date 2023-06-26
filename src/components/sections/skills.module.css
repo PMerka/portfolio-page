@@ -1,0 +1,53 @@
+.main{
+    width: 85%;
+    margin: auto;
+    scroll-margin-top: 6rem;
+}
+
+.skills{
+    display: flex;
+    row-gap: 3em;
+    column-gap: 10%;
+    flex-wrap: wrap;
+    margin: auto; 
+    opacity: 0.9;
+}
+
+.skillList{
+    flex: 2;
+    flex-shrink: 2;
+    flex-basis: 320px;
+}
+
+.skillList ul{
+    padding: 0;
+}
+
+.skillList li{
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1px 1px;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+    opacity: 1;
+    padding: 2px 6px;
+}
+
+.aboutMe{
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 260px;
+}
+
+.aboutMeText{
+    margin-top: 0;
+}
+
+.skillsTitle{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.aboutMeUl{
+    margin-top: 0.5em;
+}

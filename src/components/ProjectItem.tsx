@@ -13,7 +13,7 @@ interface projectItemProps {
   pageURL: string;
   repoUrl: string;
   children: string | JSX.Element | JSX.Element[];
-  descriptionClassNames?: string;
+  marginTop?: string|number;
   innerShadow?: boolean;
 }
 
@@ -23,7 +23,7 @@ export default function ProjectItem({
   pageURL,
   repoUrl,
   children,
-  descriptionClassNames,
+  marginTop,
   innerShadow = false,
 }: projectItemProps) {
   const title = projectData.frontmatter.title;
@@ -34,7 +34,7 @@ export default function ProjectItem({
       ref={myRef}
       className={`${styles.main} ${innerShadow ? styles.maininShadow : ''}`}
     >
-      <div className={`${styles.description} ${descriptionClassNames}`}>
+      <div className={`${styles.description}`} style={{marginTop: `${marginTop}`}}>
         <h3>{title}</h3>
         <div
           dangerouslySetInnerHTML={{ __html: htmlContent }}

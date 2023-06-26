@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import ProjectItem from "../ProjectItem";
-import "./projects.css";
+import * as styles from './projects.module.css'
 import SnowflakeImg from "../SnowflakeImg";
-import useIntersectionObserver from "src/hooks/useIntersectionObserver";
 import useProjectsData from "src/hooks/useProjectData";
 import SnowflakeVideo from "@static/snowflake_growth_opt.mp4"
 import BoidVideo from "@static/boids.mp4"
@@ -19,13 +18,9 @@ export default function Projects({refProp}: {refProp?: React.RefObject<HTMLEleme
     }
   }, []);
 
-  const imageRef = useRef<HTMLDivElement | null>(null);
-  const entry = useIntersectionObserver(imageRef, {});
-  const isVisible = !!entry?.isIntersecting;
-
   return (
-    <section ref={refProp} className="projects">
-      <div className="projects-intro">
+    <section ref={refProp} className={styles.main}>
+      <div className={styles.intro}>
         <h2>Creative Projects</h2>
         <p className="zero-top-margin">
           I like to practice my JavaScript skills on projects combining computer
@@ -38,11 +33,10 @@ export default function Projects({refProp}: {refProp?: React.RefObject<HTMLEleme
       </div>
 
       <ProjectItem
-        myRef={imageRef}
         projectData={nodes[0]}
         pageURL={"https://pmerka.github.io/snowflake/"}
         repoUrl={"https://github.com/PMerka/snowflake"}
-        descriptionClassNames="project-description-big-margin-top"
+        marginTop={'8%'}
         innerShadow={true}
       >
         <SnowflakeImg/>
@@ -53,11 +47,11 @@ export default function Projects({refProp}: {refProp?: React.RefObject<HTMLEleme
         pageURL={"https://pmerka.github.io/snowflake-growth-simulation/"}
         repoUrl={"https://github.com/PMerka/snowflake-growth-simulation"}
       >
-        <div className="video-box snowflake-video">
+        <div className={`${styles.videoBox} ${styles.snowflakeVideo}`}>
           <video
             src={SnowflakeVideo}
             style={{ width: "100%" }}
-            className="rotateY"
+            className={styles.rotateY}
             ref={video}
             autoPlay={true}
             muted={true}
@@ -70,7 +64,7 @@ export default function Projects({refProp}: {refProp?: React.RefObject<HTMLEleme
         pageURL={"https://pmerka.github.io/firefly-boids/"}
         repoUrl={"https://github.com/PMerka/firefly-boids"}
       >
-        <div className="video-box boid-video">
+        <div className={`${styles.videoBox} ${styles.boidVideo}`}>
           <video
             src={BoidVideo}
             style={{ width: "100%" }}

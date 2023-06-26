@@ -1,13 +1,18 @@
 import React from "react";
 import "./skills.css";
+import * as styles from "./skills.module.css";
 
-export default function Skills({refProp}: {refProp?: React.RefObject<HTMLElement>}) {
+export default function Skills({
+  refProp,
+}: {
+  refProp?: React.RefObject<HTMLElement>;
+}) {
   return (
-    <section ref={refProp} className="skills-section">
+    <section ref={refProp} className={styles.main}>
       <h2>Few words about me</h2>
-      <div className="skills">
-        <div className="about-me">
-          <p className="zero-top-margin">
+      <div className={styles.skills}>
+        <div className={styles.aboutMe}>
+          <p className={styles.aboutMeText}>
             I started learning the basics of programming during my bachelor's
             degree in chemistry. I chose quantum chemistry computations as the
             topic of my thesis. After finishing my master's course, I focused
@@ -17,10 +22,10 @@ export default function Skills({refProp}: {refProp?: React.RefObject<HTMLElement
           </p>
         </div>
 
-        <div className="skill-list">
-          <h4 className="about-me__h4">I work primarily with:</h4>
+        <div className={styles.skillList}>
+          <h4 className={styles.skillsTitle}>I work primarily with:</h4>
 
-          <ul className="about-me__ul">
+          <ul className={styles.aboutMeUl}>
             <li>JavaScript</li>
             <li>TypeScript</li>
             <li>React</li>
@@ -32,8 +37,8 @@ export default function Skills({refProp}: {refProp?: React.RefObject<HTMLElement
             <li>Github</li>
           </ul>
 
-          <h4 className="about-me__h4">I also use:</h4>
-          <ul className="about-me__ul">
+          <h4 className={styles.skillsTitle}>I also use:</h4>
+          <ul className={styles.aboutMeUl}>
             <li>Godot game engine</li>
             <li>Gatsby</li>
             <li>Django</li>
