@@ -14,8 +14,8 @@ export default function TopSection({
         <p className={styles.firstLine}>Hi, my name is</p>
         <h1 className={styles.name}>Pavel Měrka</h1>
         <p>
-          I m a javascript / typescript frontend developer. I focuse mostly on
-          building webapps with React. I also have some experience with backend
+          I’m a Javascript / Typescript frontend developer. I focus mostly on
+          building web apps with React. I also have some experience with backend
           frameworks (Django) and mobile development with React Native.
         </p>
         <Contact />

@@ -8,7 +8,7 @@ export default function Skills({
 }) {
   return (
     <section ref={refProp} className={styles.main}>
-      <h2>Few words about me</h2>
+      <h2>About me</h2>
       <div className={styles.skills}>
         <div className={styles.aboutMe}>
           <p className={styles.aboutMeText}>
