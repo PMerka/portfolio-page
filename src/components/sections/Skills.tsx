@@ -17,7 +17,7 @@ export default function Skills({
             topic of my thesis. After finishing my master's course, I focused
             more on programming in Python and later switched to JavaScript. I
             like learning new skills and technologies. I also have a strong
-            foundation in math, physics.
+            foundation in math and physics.
           </p>
         </div>
 
